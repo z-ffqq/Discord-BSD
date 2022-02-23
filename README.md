@@ -26,7 +26,7 @@ cd Discord-BSD
 #### Preview of notifications:
 ![image](https://media.discordapp.net/attachments/492780868973101085/946088063774363749/Screenshot_from_2022-02-23_19-55-27.png?width=1025&height=161)
 #### Activation
-:warning: **NOTIFICATIONS MUST BE ENABLED!**
+:warning: **NOTIFICATIONS MUST BE ENABLED!**<br />
 :computer: To activate notifications, enter User Settings, and go to the Notifications section at the left sidebar. After that, tick "Enable Desktop Notifications" on
 ![image](https://user-images.githubusercontent.com/59105868/132994004-d381dfe4-bf3d-4345-89f3-63fd9a46d67c.png)
 
