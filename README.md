@@ -1,7 +1,7 @@
 # Discord-BSD
 ![](https://media.discordapp.net/attachments/492780868973101085/946085340626698360/discord.png)
-<br />:computer: Discord-BSD is a native Discord client primarily for FreeBSD,
- but it can be run on other platforms
+<br />:computer: Discord-BSD is a native Discord client made to run on FreeBSD smoothly.
+<br />:speech_balloon: The name is a lie! This can also be run on Linux, Windows, and macOS.
 ## Installation
 ```
 sudo pkg install electron13
