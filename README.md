@@ -35,8 +35,8 @@ cd Discord-BSD
 ![Boot](https://user-images.githubusercontent.com/59105868/133003303-f491b628-0c66-4449-94f6-ed9d7f8d4f8a.gif)
 <br />
 **:information_source: This client does not support everything!**<br />
-:x: Screensharing
-:x: Global keybinds
-:x: Game activities
-:heavy_check_mark: Webcam
-:heavy_check_mark: Audio devices
+:x: Screensharing<br />
+:x: Global keybinds<br />
+:x: Game activities<br />
+:heavy_check_mark: Webcam<br />
+:heavy_check_mark: Audio devices<br />
