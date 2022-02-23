@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Discord
+StartupWMClass=discord
+GenericName=Internet Messenger
+Comment=All-in-one voice and text chat for gamers that's free, secure, and works on both your desktop and phone.
+Icon=auto2
+Exec=auto1
+Categories=Network;InstantMessaging;

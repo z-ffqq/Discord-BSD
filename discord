@@ -1,0 +1,5 @@
+#!/bin/sh
+cd ~/.local/share/discord-bsd
+echo "Discord 0.0.17"
+sleep 2
+npm run client

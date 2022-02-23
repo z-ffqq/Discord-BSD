@@ -1,8 +1,15 @@
-const { app, BrowserWindow, Tray, Menu, desktopCapturer } = require('electron');
+const { app, BrowserWindow, Tray, Menu, desktopCapturer, shell } = require('electron');
 const path = require('path');
 const userAgent =
-    "Mozilla/5.0 (X11; FreeBSD x86_64 13982.82.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.157 Safari/537.36";
+    "Mozilla/5.0 (X11; FreeBSD amd64 13982.82.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.157 Safari/537.36";
+const contextMenu = require('electron-context-menu');
 
+contextMenu({
+	showSaveImageAs: true,
+	showSaveImage: true,
+	showSaveLinkAs: true,
+	showCopyImageAddress: true
+});
 
 // Disable Menu
 
@@ -12,7 +19,7 @@ Menu.setApplicationMenu(false)
 var splash
 var win = '',
     appIcon = null,
-    iconpath = path.join(__dirname, 'assets/icon.png');
+    iconpath = path.join(__dirname, 'discord.png');
 
 // Create WIndow
 
@@ -28,7 +35,7 @@ function createWindow() {
         webPreferences: {
             nodeIntegration: true
         },
-        icon: path.join(__dirname, 'assets/icon.png'),
+        icon: path.join(__dirname, 'discord.png'),
         title: 'Discord',
     });
 
@@ -62,13 +69,19 @@ function createWindow() {
         return false;
     });
 
+// 516 × 360
     //Splash
-    splash = new BrowserWindow({ width: 650, height: 450, transparent: true, frame: false, alwaysOnTop: true });
+    splash = new BrowserWindow({ width: 516, height: 360, transparent: true, frame: false, alwaysOnTop: true });
     splash.loadFile("boot.html");
     // Load Discord
     win.webContents.setUserAgent(userAgent);
+    win.webContents.setWindowOpenHandler(({ url }) => {
+        // config.fileProtocol is my custom file protocol
+        // open url in a browser and prevent default
+        shell.openExternal(url);
+        return { action: 'deny' };
+    });
     win.loadURL('https://discord.com/app');
-
     win.once('ready-to-show', () => {
         splash.destroy();
         win.show();
