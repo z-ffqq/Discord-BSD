@@ -1,6 +1,6 @@
 # Discord-BSD
 ![](https://media.discordapp.net/attachments/492780868973101085/946085340626698360/discord.png)
-:computer: Discord-BSD is a native Discord client primarily for FreeBSD,
+<br />:computer: Discord-BSD is a native Discord client primarily for FreeBSD,
  but it can be run on other platforms
 ## Installation
 ```
