@@ -1,42 +1,42 @@
-# DiscordBSD
-to start it you need to have electron12 installed:
-
-Compiling it:
+# Discord-BSD
+![](https://media.discordapp.net/attachments/492780868973101085/946085340626698360/discord.png)
+:computer: Discord-BSD is a native Discord client primarily for FreeBSD,
+ but it can be run on other platforms
+## Installation
 ```
-cd /usr/ports/devel/electron12/ && make install clean
+sudo pkg install electron13
+git clone https://github.com/z-ffqq/Discord-BSD.git
+cd Discord-BSD
+./install.sh
 ```
-
-or install the already compiled version from here:
-
-https://github.com/tagattie/FreeBSD-Electron/releases/tag/v12.0.7
-
-and run the following command:
-```
-npm run test
-```
+:speech_balloon: After running these commands, the client should appear in your app launcher as usual.
+![](https://media.discordapp.net/attachments/492780868973101085/946091048776654858/Screenshot_from_2022-02-23_20-07-35.png)
 
 # Preview
 
 ### Overview
 
-![image](https://user-images.githubusercontent.com/59105868/132993833-1c33cf39-130d-4bdf-b1ea-8ab94ce21291.png)
+![image](https://media.discordapp.net/attachments/492780868973101085/946087105422045204/Screenshot_from_2022-02-23_19-52-06.png?width=753&height=423)
 
 ### Tray
 
 ![image](https://user-images.githubusercontent.com/59105868/132993874-18d21c32-edf8-44f5-9438-6912f7660d68.png)
 
 ### Notifications
-
-![image](https://user-images.githubusercontent.com/59105868/132993900-475515dc-1e07-4bb4-ae6c-e880d67d91ed.png)
-
-### To activate notifications you must activate these boxes
-
+#### Preview of notifications:
+![image](https://media.discordapp.net/attachments/492780868973101085/946088063774363749/Screenshot_from_2022-02-23_19-55-27.png?width=1025&height=161)
+#### Activation
+:warning: **NOTIFICATIONS MUST BE ENABLED!**
+:computer: To activate notifications, enter User Settings, and go to the Notifications section at the left sidebar. After that, tick "Enable Desktop Notifications" on
 ![image](https://user-images.githubusercontent.com/59105868/132994004-d381dfe4-bf3d-4345-89f3-63fd9a46d67c.png)
 
 ### Splash Screen
 
 ![Boot](https://user-images.githubusercontent.com/59105868/133003303-f491b628-0c66-4449-94f6-ed9d7f8d4f8a.gif)
-
-#### and for now nothing else
-
-#### Webcam works, but screen cast still doesn't work
+<br />
+**:information_source: This client does not support everything!**<br />
+:x: Screensharing
+:x: Global keybinds
+:x: Game activities
+:heavy_check_mark: Webcam
+:heavy_check_mark: Audio devices
