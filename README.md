@@ -3,8 +3,9 @@
 <br />:computer: Discord-BSD is a native Discord client made to run on FreeBSD smoothly.
 <br />:speech_balloon: The name is a lie! This can also be run on Linux, Windows, and macOS.
 ## Installation
+`node16` and `npm` are required for the install<br />
 ```
-sudo pkg install electron13
+sudo pkg install electron13 node16 npm
 git clone https://github.com/z-ffqq/Discord-BSD.git
 cd Discord-BSD
 ./install.sh
