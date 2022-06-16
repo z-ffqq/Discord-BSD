@@ -1,11 +1,11 @@
 #!/bin/sh
-printf "Discord 0.0.17\n"
+printf "Discord 0.0.18\n"
 sleep 1
 printf "Discord native client for FreeBSD\n"
 sleep 0.2
 install() {
 	sleep 0.2
-	printf "Installing Discord 0.0.17 ...\n"
+	printf "Installing Discord 0.0.18 ...\n"
 	mkdir -p ~/.local/share/discord-bsd
 	mkdir -p ~/.local/bin
 	mkdir -p ~/.local/share/applications
