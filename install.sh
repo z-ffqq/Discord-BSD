@@ -17,6 +17,6 @@ install() {
 	sed -i '' "s/Icon=auto2/Icon=\/home\/$USER\/.local\/share\/discord-bsd\/discord.png/" ~/.local/share/applications/discord.desktop
 	cd /home/$USER/.local/share/discord-bsd
 	npm install
-	printf "Discord 0.0.17 installed!\n"
+	printf "Discord 0.0.18 installed!\n"
 }
 printf "Launching installer...\n" && install
