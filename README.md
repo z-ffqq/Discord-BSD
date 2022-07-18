@@ -5,7 +5,7 @@
 ## Installation
 `node16` and `npm` are required for the install<br />
 ```
-sudo pkg install electron13 node16 npm
+sudo pkg install electron19 node16 npm
 git clone https://github.com/z-ffqq/Discord-BSD.git
 cd Discord-BSD
 ./install.sh
