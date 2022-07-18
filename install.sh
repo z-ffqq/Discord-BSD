@@ -1,11 +1,11 @@
 #!/bin/sh
-printf "Discord 0.0.18\n"
+printf "Discord 0.1.0\n"
 sleep 1
 printf "Discord native client for FreeBSD\n"
 sleep 0.2
 install() {
 	sleep 0.2
-	printf "Installing Discord 0.0.18 ...\n"
+	printf "Installing Discord 0.1.0 ...\n"
 	mkdir -p ~/.local/share/discord-bsd
 	mkdir -p ~/.local/bin
 	mkdir -p ~/.local/share/applications
@@ -17,6 +17,6 @@ install() {
 	sed -i '' "s/Icon=auto2/Icon=\/home\/$USER\/.local\/share\/discord-bsd\/discord.png/" ~/.local/share/applications/discord.desktop
 	cd /home/$USER/.local/share/discord-bsd
 	npm install
-	printf "Discord 0.0.18 installed!\n"
+	printf "Discord 0.1.0 installed!\n"
 }
 printf "Launching installer...\n" && install
