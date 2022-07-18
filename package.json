@@ -4,7 +4,7 @@
   "description": "Discord Client",
   "main": "index.js",
   "scripts": {
-    "client": "electron13 ."
+    "client": "electron19 ."
   },
   "author": "z-ffqq",
   "license": "BSD-3-Clause",
