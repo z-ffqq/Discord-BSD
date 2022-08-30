@@ -1,5 +1,4 @@
 #!/bin/sh
 cd ~/.local/share/discord-bsd
-echo "Discord 0.0.18"
-sleep 2
+echo "Discord 0.0.19"
 npm run client
